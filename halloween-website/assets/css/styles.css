@@ -107,8 +107,10 @@ button{
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-
-
+.flex{display: flex;}
+.grid{display: grid;}
+.img_box{ vertical-align: middle; object-fit: cover;}
+.btn{ border: none; background: rgb(253, 53, 3); color: #fff; border-radius: 5px;}
 /*=============== LAYOUT ===============*/
 
 
@@ -186,9 +188,27 @@ button{
 @media screen and (max-width: 320px){
   /* 320px"이하"의 디바이스 대응 */
   /* 모든 컨텐츠 항목은 한줄로 정렬된다. */
+  body{margin-top: 10px;}
+  .container{width: 290px; margin: 0 auto; }
+    /* header */
+  .top_menu{justify-content:space-between; align-items: center;}
+  .top_menu .left_item{ align-items: center;}
+  .top_menu .left_item .img_box{ width: 30px; padding: 5px; }
 
-}
-
+  /* main */
+  .home_content{flex-direction: column;}
+  .home_content .pages{padding-top: 30px; width: 80px; margin: 0 auto; justify-content: space-between;}
+  .home_content .pages>div{width: 5px; height: 5px;  border-radius: 5px; background: #fff;}
+  .home_content .pages>div:first-of-type{width: 20px; height: 4px;  border-radius: 5px; background: #fff;}
+  .home_content .home_top_item{text-align: end;}
+  .home_content .home_top_item .img_box{width: 230px; margin: 0 auto; position: relative;}
+  .home_content .home_top_item .img_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 15px; right: 3px;}
+  .home_content .home_top_item .img_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius: 5px; position: absolute; top: 53px; right: 0;}
+  .home_content .home_bottom_item h3{padding-bottom: 10px;}
+  .home_content .home_bottom_item h2{ font-weight: var(--font-black);  padding-bottom: 5px;}
+  .home_content .home_bottom_item .txt_box{ padding-top: 20px; padding-bottom: 30px; font-size: 14px;  }
+  .home_content .home_bottom_item .home_btn{justify-content: space-between; align-items: center;}
+  .home_content .home_bottom_item .home_btn>button{padding: 13px;  }
 /* For medium devices */
 @media screen and (min-width: 576px){
   /* 576px "이상"의 디바이스 대응 */

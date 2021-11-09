@@ -9,13 +9,13 @@
 
 
     <!--=============== BOXICONS ===============-->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!--=============== SWIPER CSS ===============-->
 
 
     <!--=============== CSS ===============-->
-
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Responsive Halloween Website</title>
 
@@ -30,11 +30,11 @@
     <header class="header">
         <div class="container">
             <div class="top_menu flex">
-                <div class="left_item">
+                <div class="left_item flex">
                     <div class="img_box"><img src="./assets/img/logo.png" alt="logo"></div>
                     <h3>Halloween</h3>
                 </div>
-                <div class="img_box"><img src="" alt=""></div>
+                <div class="img_box"><i class='bx bx-menu'></i></div>
             </div>
         </div>
     </header>
@@ -43,9 +43,9 @@
         <!--==================== HOME ====================-->
         <section class="home">
             <div class="container">
-                <div class="home flex">
+                <div class="home_content flex">
                     <div class="home_top_item">
-                        <h3>The Labu "Reiza"</h3>
+                        <h4>The Labu "Reiza"</h4>
                         <p>The Living Pumpkin</p>
                         <div class="img_box"><img src="./assets/img/home1-img.png" alt="home1_pumkin"></div>
                     </div>
@@ -61,9 +61,14 @@
                             <p>in Malaysia</p>
                         </div>
                         <div class="home_btn flex">
-                            <button>Book Now</button>
-                            <p>Track Record</p>
+                            <button class="btn">Book Now</button>
+                            <p>Track Record <i class='bx bx-right-arrow-alt'></i></p>
                         </div>
+                    </div>
+                    <div class="pages flex">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -71,37 +76,289 @@
 
         <!--==================== CATEGORY ====================-->
         <section class="section">
-
+            <div class="container">
+                <h4>Favorite Scare</h4>
+                <h4>Category</h4>
+                <div class="category flex">
+                    <div class="category_item">
+                        <div class="img_box"><img src="./assets/img/category1-img.png" alt="category1"></div>
+                        <div class="txt_box">
+                            <h4>Ghosts</h4>
+                            <p>Choose the ghosts,</p>
+                            <p>the scariest there</p>
+                            <p>are.</p>
+                        </div>
+                    </div>
+                    <div class="category_item">
+                        <div class="img_box"><img src="./assets/img/category2-img.png" alt="category2"></div>
+                        <div class="txt_box">
+                            <h4>Pumpkin</h4>
+                            <p>You look at the</p>
+                            <p>scariest pumpkin</p>
+                            <p>there is.</p>
+                        </div>
+                    </div>
+                    <div class="category_item">
+                        <div class="img_box"><img src="./assets/img/category3-img.png" alt="category3"></div>
+                        <div class="txt_box">
+                            <h4>Witch Hat</h4>
+                            <p>Pick the most</p>
+                            <p>stylish witch hats</p>
+                            <p>out there</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== ABOUT ====================-->
         <section class="section">
-
+            <div class="container">
+                <div class="about_content flex">
+                    <h4>About Halloween</h4>
+                    <h4>Night</h4>
+                    <div class="txt_box">
+                        <p>Night of all the saints, or all the dead, is</p>
+                        <p>celebrated on October 31 and it is a very</p>
+                        <p>fun international celebration, this</p>
+                        <p>celebration comes from ancient origins,</p>
+                        <p>and is already celebrated by everyone.</p>
+                    </div>
+                    <button class="btn">Know more</button>
+                </div>
+                <div class="img_box"><img src="./assets/img/about-img.png" alt="about_img"></div>
+            </div>
         </section>
 
         <!--==================== TRICK OR TREAT ====================-->
         <section class="section">
-
+            <div class="container">
+                <h4>About Halloween</h4>
+                <h4>Night</h4>
+                <div class="trick_content grid">
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat1-img.png" alt="trick_img1"></div>
+                            <div class="txt_box">
+                                <h4>Toffee</h4>
+                                <p>Candy</p>
+                                <h4>$11.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat2-img.png" alt="trick_img2"></div>
+                            <div class="txt_box">
+                                <h4>Bone</h4>
+                                <p>Accessory</p>
+                                <h4>$8.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat3-img.png" alt="trick_img3"></div>
+                            <div class="txt_box">
+                                <h4>Scarecrow</h4>
+                                <p>Accessory</p>
+                                <h4>$15.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat4-img.png" alt="trick_img4"></div>
+                            <div class="txt_box">
+                                <h4>Candy Cane</h4>
+                                <p>Candy</p>
+                                <h4>$7.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat5-img.png" alt="trick_img5"></div>
+                            <div class="txt_box">
+                                <h4>Pumpkin</h4>
+                                <p>Candy</p>
+                                <h4>$19.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trick_item">
+                        <div class="content">
+                            <div class="img_box"><img src="./assets/img/trick-treat6-img.png" alt="trick_img6"></div>
+                            <div class="txt_box">
+                                <h4>Ghosts</h4>
+                                <p>Accessory</p>
+                                <h4>$17.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== DISCOUNT ====================-->
         <section class="section">
-
+            <div class="container">
+                <div class="discont_content">
+                    <div class="discount_item">
+                        <h3>50% Discount</h3>
+                        <h3>on New Producte</h3>
+                        <button class="btn">Go the new</button>
+                        <div class="img_box"><img src="./assets/img/discount-img.png" alt="discount_img"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== NEW ARRIVALS ====================-->
         <section class="section">
-
+            <div class="container">
+                <h3>New Arrivals</h3>
+                <div class="new_arrivals_content">
+                    <div class="slide flex">
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new1-img.png" alt="new1-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Witch Broom</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$7.99</p>
+                                    <p>$14.99</p>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new2-img.png" alt="new2-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Haunted House</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$14.99</p>
+                                    <p>$29.99</p>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new3-img.png" alt="new3-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Halloween Candle</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$11.99</p>
+                                    <p>$21.99</p>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new4-img.png" alt="new4-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Witch hat</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$4.99</p>
+                                    <p>$9.99</p>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new5-img.png" alt="new5-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Rip</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$24.99</p>
+                                    <p>$44.99</p>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <div class="content flex">
+                                    <div class="new">New</div>
+                                    <div class="img_box"><img src="./assets/img/new6-img.png" alt="new6-img"></div>
+                                    <span class="txt_box">
+                                        <h4>Terrifying CryStal Ball</h4>
+                                        <p>Accessory</p>
+                                    </span>
+                                    <p>$5.99</p>
+                                    <p>$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== OUR NEWSLETTER ====================-->
         <section class="section">
-
+            <div class="container">
+                <h4>Our Newsletter</h4>
+                <p>Promotion new producte and sales. Directly</p>
+                <p>to you in box</p>
+                <div class="our_news_content">
+                    <div class="item">
+                        <p>Enter your email</p>
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer section"></footer>
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer_content grid">
+                <div class="footer_item">
+                    <div class="title flex">
+                        <div class="img_box"><img src="./assets/img/favicon.png" alt="logo_icon"></div>
+                        <h4>Halloween</h4>
+                        <div class="txt_box">
+                            <p>Enjoy the scariest night</p>
+                            <p>of your life</p>
+                        </div>
+                        <div class="icons">
+                            <div class="img_box"><i class='bx bxl-facebook' ></i></div>
+                            <div class="img_box"><i class='bx bxl-instagram-alt' ></i></div>
+                            <div class="img_box"><i class='bx bxl-twitter' ></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <h4>About</h4>
+                    <div class="txt_box">
+                        <p>About Us</p>
+                        <p>Features</p>
+                        <p>News</p>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <h4>Our Services</h4>
+                    <div class="txt_box">
+                        <p>Picing</p>
+                        <p>Discounts</p>
+                        <p>Shipping mode</p>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <h4>Our Company</h4>
+                    <div class="txt_box">
+                        <p>Blog</p>
+                        <p>Abouts us</p>
+                        <p>Our mission</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up"></a>
@@ -114,3 +371,5 @@
 </body>
 
 </html>
+
+
