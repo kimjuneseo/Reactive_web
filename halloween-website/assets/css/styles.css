@@ -38,7 +38,7 @@
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
-  --border-ra: 15px;
+  --border-ra: 3rem;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -246,7 +246,7 @@ body{margin-top: 10px;}
 
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
   /* 320px"이하"의 디바이스 대응 */
   /* 모든 컨텐츠 항목은 한줄로 정렬된다. */
  .container{width: 90%;}
