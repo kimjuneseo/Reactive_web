@@ -216,12 +216,15 @@ section, footer{padding-top: 100px;}
 .newsletter .newsletter_content .btn{padding: 15px 25px 15px 25px;}
 
 /*=============== FOOTER ===============*/
+.footer{width: 100%; position: relative; overflow: hidden;}
+.footer .footer_img_one, .footer_img_two{position: absolute;}
+.footer_img_one{max-width: 80px; top: 20%; right: -5%;}
+.footer_img_two{max-width: 120px; top: 70%; right: 20%;}
 .footer .footer_content{gap: 25px;}
 .footer .footer_content .footer_item p{padding-top: 4px;}
 .footer .footer_content .footer_item .title{flex-direction: column; }
 .footer .footer_content .footer_item .title .title_item{align-items: center;}
 .footer .footer_content .footer_item .title .title_item img{width: 60%;}
-.footer .footer_content .footer_item .title .txt_box{}
 .footer .footer_content .footer_item .title .icons{gap: 10px;}
 .footer .footer_content .footer_item .title .icons .icon_box{padding: 5px; border-radius:var(--border-ra); background: var(--container-color);}
 .footer .footer_content .footer_item h3{padding-bottom: 10px;}
@@ -291,4 +294,6 @@ section, footer{padding-top: 100px;}
   .discount_item .img_box{order: 1;}
   .discount_item .txt_box{order: 2; }
   .footer_content{grid-template-columns: repeat(4, 1fr); place-items: center;}
+  .footer_img_one{max-width: 80px; top: 30%; right: -2%;}
+.footer_img_two{max-width: 120px; top: 30%;  left: -2%;}
 }
