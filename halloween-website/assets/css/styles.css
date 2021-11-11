@@ -38,7 +38,7 @@
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
-  --border-ra: 3rem;
+  --border-ra: 1.5rem;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -69,7 +69,8 @@ html{
 }
 
 body{
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
+  padding-top: 10px;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background: var(--body-color);
@@ -108,11 +109,12 @@ button{
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.container{width: 90%; margin: 0 auto; }
 .flex{display: flex;}
 .grid{display: grid;}
+
+.img_box{margin: 0 auto; max-width: 250px; }
 .btn{ border: none; background: rgb(253, 53, 3); color: #fff; border-radius: 9px;}
-body{margin-top: 10px;}
-.container{max-width: 996px; margin: 0 auto; }
 
 
 /*=============== LAYOUT ===============*/
@@ -143,12 +145,12 @@ body{margin-top: 10px;}
 
 
 /*=============== HOME ===============*/
-.home_content{flex-direction: column;}
+.home_content{flex-direction: column; }
 .pages{ top: 97%; }
 .home_content .home_top_item{text-align: end;}
-.home_content .home_top_item .img_box{width: 80%; margin: 0 auto; position: relative;}
-.home_content .home_top_item .img_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 15px; right: 3px;}
-.home_content .home_top_item .img_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius:var(--border-ra); position: absolute; top: 53px; right: 0;}
+.home_content .home_top_item .txt_box{position: relative;}
+.home_content .home_top_item .txt_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 50px; right: 3px;}
+.home_content .home_top_item .txt_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius:var(--border-ra); position: absolute; top:90px; right: 0;}
 .home_content .home_bottom_item h3{padding-bottom: 10px;}
 .home_content .home_bottom_item h2{ font-weight: var(--font-black);  padding-bottom: 5px;}
 .home_content .home_bottom_item .txt_box{ padding-top: 20px; padding-bottom: 30px; font-size: 13px;  }
@@ -165,13 +167,13 @@ body{margin-top: 10px;}
 
 
 /*=============== CATEGORY ===============*/
-.category{padding-top: 70px;}
+.category{padding-top: 70px; }
 .category h2{text-align: center;}
-.category_content .category_item:first-of-type{padding-top: 60px;}
+.category_content {margin: 0 auto;}
 .category_content .category_item .txt_box{text-align: center;}
-
 /*=============== ABOUT ===============*/
-.about .img_box{padding-top: 30px; width: 75%; margin: 0 auto;}
+.about{flex-direction: column;}
+.about .img_box{padding-top: 30px;}
 .about_content{padding-top: 100px; flex-direction: column; text-align: center;}
 .about_content div{padding-top: 20px;}
 .about_content .btn_wrap{justify-content: center;}
@@ -180,15 +182,15 @@ body{margin-top: 10px;}
 /*=============== TRICK OR TREAT ===============*/
 .trick{padding-top: 80px;}
 .trick h2{text-align: center;}
-.trick_content{gap: 20px; padding-top: 50px;}
-.trick_item{width: 100%;  border-radius:var(--border-ra); background: var(--container-color); position: relative; }
+.trick_content{ margin: 0 auto; max-width: 500px; gap: 20px;  }
+.trick_item{ margin: 0 auto; max-width: 300px; max-height: 300px; border-radius:var(--border-ra); background: var(--container-color); position: relative; }
 .trick_item .content{margin: 50px auto;  width: 60%; text-align: center; }
 .trick_item .cart{border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: 0;  }
 .trick_item .cart_icon{font-size: var(--mb-2-5);}
 
 /*=============== DISCOUNT ===============*/
 .discount{padding-top: 100px;}
-.discount_content{padding: 50px; background: var(--container-color); border-radius:var(--border-ra);}
+.discount_content{padding: 50px;  background: var(--container-color); border-radius:var(--border-ra);}
 .discount_content .discount_item{text-align: center;}
 .discount_content .discount_item h3:last-of-type{padding-bottom: 30px;}
 .discount_content .discount_item .btn{padding: 10px;}
@@ -196,23 +198,21 @@ body{margin-top: 10px;}
 /*=============== NEW ARRIVALS ===============*/
 .news{padding-top: 100px; text-align: center;}
 .new_arrivals_content{padding-top: 40px; width: 100%; }
-.new_arrivals_content .slide{width: 600%; gap: 10px;}
-.new_arrivals_content .slide .slide_item{width: 10%; border-radius:var(--border-ra); background: var(--container-color); flex-direction: column; }
+.new_arrivals_content .slide{max-width: 2100px; gap: 20px;}
+.new_arrivals_content .slide .slide_item{max-width: 350px; border-radius:var(--border-ra); background: var(--container-color); flex-direction: column; }
 .new_arrivals_content .slide .slide_item .btn_wrap{padding: 10px 0px 0px 10px;}
 .new_arrivals_content .slide .slide_item .btn_wrap .btn{padding: 10px; }
-.new_arrivals_content .slide .slide_item .img_box{ margin: 0 auto; width: 50%;}
 .new_arrivals_content .slide .slide_item .txt_box{padding-top: 10px; justify-content: center; align-items: center; gap: 4px;}
 .new_arrivals_content .slide .slide_item .txt_box p:last-of-type{font-size: var(--small-font-size); color: rgb(253, 53, 3); position: relative;}
 .new_arrivals_content .slide .slide_item .txt_box p:last-of-type::before{content: ''; width: 75%; height: 1px; background: rgb(253, 53, 3); position: absolute; top: 50%; left: 11px;}
 
 
 /*=============== NEWSLETTER ===============*/
-.newsletter{padding-top: 80px; text-align: center;}
+.newsletter{padding-top: 80px;  text-align: center;}
 .newsletter>p{font-size: var(--small-font-size);}
 .newsletter>p:first-of-type{padding-top: 20px;}
-.newsletter .newsletter_content{padding: 23px; margin-top: 20px; border-radius:var(--border-ra); background: var(--container-color); justify-content: space-between; align-items: center;}
+.newsletter .newsletter_content{padding: 23px; margin: 50px auto; max-width: 400px; border-radius:var(--border-ra); background: var(--container-color); justify-content: space-between; align-items: center;}
 .newsletter .newsletter_content .btn{padding: 15px 25px 15px 25px;}
-
 
 /*=============== FOOTER ===============*/
 .footer{padding-top: 100px;}
@@ -247,36 +247,35 @@ body{margin-top: 10px;}
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (min-width: 320px){
-  /* 320px"이하"의 디바이스 대응 */
   /* 모든 컨텐츠 항목은 한줄로 정렬된다. */
- .container{width: 90%;}
+ .container{max-width: 996px;}
+ 
 /* For medium devices */
 }
 @media screen and (min-width: 576px){
-  .container{width: 90%;}
-  .category_content {grid-template-columns: repeat(2, 1fr);}
-  .trick_content{gap: 20px; grid-template-columns: repeat(2, 1fr); padding-top: 50px;}
+  
+  .category_content {max-width: 500px; grid-template-columns: repeat(2, 1fr);}
+  .trick_content{padding-top: 50px; gap: 15px; grid-template-columns: repeat(2, 1fr); }
+  .trick_content{max-width: 500px;}
 /* For medium devices */
 }
 
 @media screen and (min-width: 767px){
   /* 767px "이상"의 디바이스 대응 */
-  .container{width: 90%;}
-  .category_content {grid-template-columns: repeat(2, 1fr);}
-  .trick_content{gap: 20px; grid-template-columns: repeat(2, 1fr); padding-top: 50px;}
 }
 
 /* For large devices */
 @media screen and (min-width: 992px){  
   /* 992px "이상"의 디바이스 대응 */
-  .container{width: 90%;}
-  .category_content {grid-template-columns: repeat(2, 1fr);}
-  .trick_content{gap: 20px; grid-template-columns: repeat(2, 1fr); padding-top: 50px;}
 }
 
 @media screen and (min-width: 1200px){  
   /* 1200px "이상"의 디바이스 대응 */
-  .container{width: 90%;}
-  .category_content {grid-template-columns: repeat(2, 1fr);}
-  .trick_content{gap: 20px; grid-template-columns: repeat(2, 1fr); padding-top: 50px;}
+  /* .img_box{max-width: 300px;} */
+  .home_content{flex-direction: row; justify-content: space-around;}
+  .category_content{max-width: 100%; grid-template-columns: repeat(3, 1fr); gap: 60px;}
+  .about{grid-template-columns: repeat(2, 1fr)}
+  .about .about_content{text-align: left;}
+  .trick_content{max-width: 100%; grid-template-columns: repeat(3, 1fr);}
+  .trick_content .trick_item{max-width: 300px;}
 }
