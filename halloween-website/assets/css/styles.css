@@ -129,16 +129,15 @@ header{position: relative; z-index: var(--z-tooltip);}
  .left_item .img_box{ width: 30px; padding: 5px; }
 
 /*=============== NAV ===============*/
-.nav{padding-bottom: 70px;  margin: 0 auto; width: 100%; justify-content: space-around; position: fixed; z-index: var(--z-fixed); top: 0;  border: none; border-radius: 0px 0px var(--border-ra) var(--border-ra);  background: var(--container-color); text-align: center;
-  height: 0; overflow: hidden; padding: 0;
+.nav{ width: 100%; height: 350px; position: fixed; z-index: var(--z-fixed); top: 0;  border: none; border-radius: 0px 0px var(--border-ra) var(--border-ra);  background: var(--container-color); text-align: center;
+  transition: .2s; overflow: hidden;
 }
-.nav .menu{width: 33%;  padding-top: 50px;  line-height: 50px; }
+.nav .menu{ padding-top: 50px;  flex-direction: column; gap: 30px; align-items: center; }
 .nav .menu a{font-weight: var(--font-black); color: #fff; }
-.nav .menu button{padding: 10px 20px 10px 20px; border: 1px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
-.nav .img_box{max-width: 100px; max-height: 100px; width: 33%; }
-.nav .back{width: 33%;}
+.nav .menu button{padding: 10px 25px 15px 25px; border: 2px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
+.nav .img_box{max-width: 100px; position: absolute; top: 0; left: 0;}
+.nav .back{position: absolute; top: 0; right: 0;}
 .nav .back .bx-x{ font-size: var(--mb-2); line-height: 50px;}
-.left_item .img_box:checked .nav{height: 300px; overflow: hidden; padding: 0;}
 @media screen and (max-width: 767px){
   /* 모바일 네비게이션이 변경되는 위치 */
   
