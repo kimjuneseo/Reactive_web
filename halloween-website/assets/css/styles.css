@@ -123,7 +123,7 @@ section, footer{padding-top: 100px;}
 
 
 /*=============== HEADER ===============*/
-header{width: 100%; height: var(--header-height); position: fixed; top: 0;   z-index: var(--z-tooltip); align-items: center;}
+header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-tooltip);  align-items: center;}
 .header_background{background: var(--container-color);}
 .top_menu{justify-content:space-between; align-items: center;}
 .top_menu .left_item{ align-items: center;}
@@ -131,23 +131,31 @@ header{width: 100%; height: var(--header-height); position: fixed; top: 0;   z-i
 .bx-grid-alt{font-size: var(--mb-1);}
 
 /*=============== NAV ===============*/
-.nav{ width: 100%; height: 0px; position: absolute; z-index: var(--z-fixed); top: 0; left: 0; border: none; border-radius: 0px 0px var(--border-ra) var(--border-ra);  background: var(--container-color); text-align: center;transition: .2s; overflow: hidden;}
-.nav .menu{ padding-top: 50px;  flex-direction: column; gap: 30px; align-items: center; }
-.nav .menu .nav_active{position: relative;}
-.nav .menu .nav_active::before{content: ''; position: absolute;bottom: -0.75rem; left: 45%; width: 5px; height: 5px; background-color: var(--title-color); border-radius: 50%}
-.nav .menu a{font-weight: var(--font-black);  color: #fff; }
-.nav .menu button{padding: 10px 25px 15px 25px; border: 2px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
-.nav .img_box{max-width: 100px; position: absolute; top: 0; left: 0;}
-.nav .back{position: absolute; top: 0; right: 0;}
-.nav .back .bx-x{ font-size: var(--mb-2); line-height: 50px;}
+.nav .nav_menu .img_box{display: none;}
+.nav .nav_menu .back{display: none;}
+.nav .icon_box{display: none;}
+.nav_menu .menu{  flex-direction: row; gap: 30px; align-items: center; }
+.nav_menu .menu a{font-weight: var(--font-black);  color: #fff; }
+.nav_menu .menu button{padding: 10px 25px 15px 25px; border: 2px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
+.nav_menu .menu .nav_active{position: relative;}
+.nav_menu .menu .nav_active::before{content: ''; position: absolute;bottom: -0.75rem; left: 45%; width: 5px; height: 5px; background-color: var(--title-color); border-radius: 50%}
+
 @media screen and (max-width: 767px){
   /* 모바일 네비게이션이 변경되는 위치 */
-  
+  .nav .icon_box{display: inline-block;}
+  .nav_menu{ width: 100%; height: 0px; position: absolute; z-index: var(--z-fixed); top: 0; left: 0; border: none; border-radius: 0px 0px var(--border-ra) var(--border-ra);  background: var(--container-color); text-align: center;transition: .2s; overflow: hidden;}
+  .nav_menu .menu{ padding-top: 50px; flex-direction: column; gap: 30px; align-items: center; }
+  .nav_menu .menu .nav_active{position: relative;}
+  .nav_menu .menu .nav_active::before{content: ''; position: absolute;bottom: -0.75rem; left: 45%; width: 5px; height: 5px; background-color: var(--title-color); border-radius: 50%}
+  .nav_menu .menu a{font-weight: var(--font-black);  color: #fff; }
+  .nav_menu .menu button{padding: 10px 25px 15px 25px; border: 2px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
+  .nav_menu .img_box{ position: absolute; top: 0; left: 0; max-width: 100px; display: inline-block;}
+  .nav_menu .back{position: absolute; top: 0; right: 0; display: inline-block;}
+  .nav_menu .back .bx-x{ font-size: var(--mb-2); line-height: 50px;}
 }
 
 
 /* Show menu */
-
 
 /* Change background header */
 /* 스크롤을 내릴때 HEADER 영역에 배경색이 들어간다. (--container-color) */
@@ -160,8 +168,8 @@ header{width: 100%; height: var(--header-height); position: fixed; top: 0;   z-i
 .home{padding: 0; padding-top: var(--header-height);}
 
 .pages{ width: 100%; position: relative; top: 30px;  z-index: 0; }
+
 .home_content .home_top_item{text-align: end;}
-.bx-menu{font-size: var(--mb-1-5);}
 .home_content .home_top_item .txt_box{position: relative;}
 .home_content .home_top_item .txt_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 50px; right: 3px;}
 .home_content .home_top_item .txt_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius:var(--border-ra); position: absolute; top:90px; right: 0;}
@@ -267,7 +275,6 @@ header{width: 100%; height: var(--header-height); position: fixed; top: 0;   z-i
 /* For medium devices */
 }
 @media screen and (min-width: 576px){
-  
   .category_content {max-width: 500px; grid-template-columns: repeat(2, 1fr);}
   .trick_content{padding-top: 50px; gap: 15px; grid-template-columns: repeat(2, 1fr); }
   .trick_content{max-width: 500px;}
@@ -276,6 +283,7 @@ header{width: 100%; height: var(--header-height); position: fixed; top: 0;   z-i
 
 @media screen and (min-width: 767px){
   /* 767px "이상"의 디바이스 대응 */
+  .home_content{padding-top: 40px;}
 }
 
 /* For large devices */

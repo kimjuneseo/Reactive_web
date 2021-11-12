@@ -1,6 +1,6 @@
 /*=============== SHOW MENU ===============*/
 const header = document.querySelector('header');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.nav_menu');
 const showMenu_btn = document.querySelector('.show_menu');
 const hiddenMenu_btn = document.querySelector('.hidden_menu');
 const menu = document.querySelectorAll('.menu>div');
@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
             document.querySelector(`.nav_menu a[href='#${sectionId}']`).classList.add('nav_active')
         } else {
             document.querySelector(`.nav_menu a[href='#${sectionId}']`).classList.remove('nav_active')
-        }
+        };
     })
 });
 
