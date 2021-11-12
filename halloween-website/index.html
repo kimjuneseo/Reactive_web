@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
     <!--=============== BOXICONS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
@@ -17,33 +17,32 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Responsive Halloween Website</title>
-
+    
     <!-- 모바일 페이지 선 작업 -->
     <!-- google font의 poppins 폰트를 사용한다. -->
     <!-- font-weight는 400,500,600,900을 사용한다. 디자인시안 참조 -->
 
 </head>
-
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header">
+    <header class="header flex">
         <div class="container ">
             <div class="top_menu flex">
                 <div class="left_item flex">
                     <div class="img_box flex"><img src="./assets/img/logo.png" alt="logo"></div>
                     <h3>Halloween</h3>
                 </div>
-                <div class="icon_box show_menu"><i class='bx bx-menu'></i></div>
+                <div class="icon_box show_menu"><i class='bx bx-grid-alt'></i></div>
             </div>
         </div>
         <nav>
             <div class="nav">
                 <div class="img_box"><img src="./assets/img/nav-img.png" alt=""></div>
                 <div class="menu flex">
-                    <div><a href="">HOME</a></div>
-                    <div><a href="">ABOUT</a></div>
-                    <div><a href="">CANDY</a></div>
-                    <div><a href="">NEW</a></div>
+                    <div class="nav_menu"><a href="#home" class="target_link">HOME</a></div>
+                    <div class="nav_menu"><a href="#about" class="target_link">ABOUT</a></div>
+                    <div class="nav_menu"><a href="#candy" class="target_link">CANDY</a></div>
+                    <div class="nav_menu"><a href="#new" class="target_link">NEW</a></div>
                     <button>Support</button>
                 </div>
                 <div class="back "><i class='bx bx-x hidden_menu'></i></div>
@@ -53,7 +52,7 @@
     
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
                 <div class=" swiper swiper-home">
                     <div class="home_slide swiper-wrapper">
@@ -177,7 +176,7 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="section">
+        <section class="section" id="about">
             <div class="container about grid">
                 <div class="about_content flex">
                     <h2>About Halloween
@@ -197,7 +196,7 @@
 
         <!--==================== TRICK OR TREAT ====================-->
         <section class="section">
-            <div class="container trick">
+            <div class="container trick" id="candy">
                 <h2>TRICK OR TREAT</h2>
                 <div class="trick_content grid">
                     <div class="trick_item">
@@ -282,7 +281,7 @@
         </section>
 
         <!--==================== NEW ARRIVALS ====================-->
-        <section class="section">
+        <section class="section" id="new">
             <div class="container news">
                 <h2>New Arrivals</h2>
                 <div class="new_arrivals_content swiper swiper-arrivals ">
