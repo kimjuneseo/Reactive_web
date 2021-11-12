@@ -115,7 +115,7 @@ section, footer{padding-top: 100px;}
 .flex{display: flex;}
 .grid{display: grid;}
 
-.img_box{margin: 0 auto; max-width: 250px; }
+.img_box{margin: 0 auto; max-width: 240px; }
 .btn{ border: none; background: rgb(253, 53, 3); color: #fff; border-radius: 9px;}
 
 
@@ -203,10 +203,13 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 /*=============== TRICK OR TREAT ===============*/
 .trick h2{text-align: center;}
 .trick_content{ margin: 0 auto; max-width: 500px; gap: 20px;  }
-.trick_item{ margin: 0 auto;  max-height: 300px; border-radius:var(--border-ra); background: var(--container-color); position: relative; }
+.trick_item{ margin: 0 auto;  max-height: 300px; border-radius:var(--border-ra); background: var(--container-color); position: relative; overflow: hidden;}
 .trick_item .content{margin: 50px auto;  width: 60%; text-align: center; }
-.trick_item .cart{border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: 0;  }
-.trick_item .cart_icon{font-size: var(--mb-2-5);}
+.trick_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: -3rem;  transition: .2s;}
+.trick_item:hover .cart{  bottom: 0; right: 0;  transition: .2s;}
+.trick_item .cart_icon{font-size: var(--mb-1-5); padding: 8px;}
+
+
 
 /*=============== DISCOUNT ===============*/
 .discount_content{padding: 50px;  background: var(--container-color); border-radius:var(--border-ra);}
@@ -216,9 +219,9 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 
 /*=============== NEW ARRIVALS ===============*/
 .news{ text-align: center;}
-.new_arrivals_content{padding-top: 40px; width: 100%; }
-.new_arrivals_content .slide{max-width: 2100px; gap: 20px;}
-.new_arrivals_content .slide .slide_item{max-width: 350px; border-radius:var(--border-ra); background: var(--container-color); flex-direction: column; }
+.new_arrivals_content{padding-top: 40px; }
+.new_arrivals_content .slide{ gap: 20px;}
+.new_arrivals_content .slide .slide_item{width: 242px; border-radius:var(--border-ra); background: var(--container-color); flex-direction: column; }
 .new_arrivals_content .slide .slide_item .btn_wrap{padding: 10px 0px 0px 10px;}
 .new_arrivals_content .slide .slide_item .btn_wrap .btn{padding: 10px; }
 .new_arrivals_content .slide .slide_item .txt_box{padding-top: 10px; justify-content: center; align-items: center; gap: 4px;}
