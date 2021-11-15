@@ -59,7 +59,7 @@ window.addEventListener('scroll', () => {
 
 /*=============== NEW SWIPER ===============*/
 const swiper = new Swiper('.swiper-arrivals', {
-   centeredSlides: true,
+    centeredSlides: true,
     slidesPerView: "auto",
     loop: 'true',
     spaceBetween: 16,
@@ -71,4 +71,30 @@ const swiper = new Swiper('.swiper-arrivals', {
 /*=============== SHOW SCROLL UP ===============*/
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+ScrollReveal().reveal(`.swiper-home, .new-swiper, .newsletter`, {
+    origin: 'top',
+    distance: '50px',
+    duration: 2500,
+    delay: 400,
+})
+ScrollReveal().reveal(`.category_content, .trick__content, .footer__content`, {
+    // interval: 500,
+    origin: 'top',
+    distance: '50px',
+    duration: 2500,
+    delay: 400,
+})
+ScrollReveal().reveal(`.about__data, .discount__img`, {
+    origin: 'left',
+    origin: 'top',
+    distance: '50px',
+    duration: 2500,
+    delay: 400,
+})
+ScrollReveal().reveal(`.about__img, .discount__data`, {
+    origin: 'right',
+    origin: 'top',
+    distance: '50px',
+    duration: 2500,
+    delay: 400,
+})
