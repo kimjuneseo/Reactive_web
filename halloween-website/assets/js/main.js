@@ -71,29 +71,27 @@ const swiper = new Swiper('.swiper-arrivals', {
 /*=============== SHOW SCROLL UP ===============*/
 
 
-ScrollReveal().reveal(`.swiper-home, .new-swiper, .newsletter`, {
+ScrollReveal().reveal(`.swiper-home, .category_content, .trick_content, .new-swiper, .news, .newsletter  `, {
     origin: 'top',
-    distance: '50px',
-    duration: 2500,
-    delay: 400,
+    distance: '70px',
+    duration: 3000,
+    delay: 500,
 })
-ScrollReveal().reveal(`.category_content, .trick__content, .footer__content`, {
-    // interval: 500,
+ScrollReveal().reveal(`.category_content, .trick__content, .footer_content`, {
+    interval: 900,
     origin: 'top',
-    distance: '50px',
-    duration: 2500,
-    delay: 400,
+    distance: '70px',
+    duration: 3000,
+    delay: 500,
 })
-ScrollReveal().reveal(`.about__data, .discount__img`, {
+ScrollReveal().reveal(`.about_content, .discount_content_img`, {
     origin: 'left',
-    origin: 'top',
     distance: '50px',
     duration: 2500,
     delay: 400,
 })
-ScrollReveal().reveal(`.about__img, .discount__data`, {
+ScrollReveal().reveal(`.about_img, .discount_txt`, {
     origin: 'right',
-    origin: 'top',
     distance: '50px',
     duration: 2500,
     delay: 400,
