@@ -49,6 +49,9 @@ window.addEventListener('scroll', () => {
         const sectionHeight = el.offsetHeight;
         const sectionTop = el.offsetTop - 56;
         const sectionId = el.getAttribute('id');
+        if(sectionId == 'about'){
+            
+        }
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector(`.nav_menu a[href='#${sectionId}']`).classList.add('nav_active')
         } else {
