@@ -59,19 +59,10 @@ window.addEventListener('scroll', () => {
 
 /*=============== NEW SWIPER ===============*/
 const swiper = new Swiper('.swiper-arrivals', {
-    direction: 'horizontal',
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination1',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        clickable: true,
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+   centeredSlides: true,
+    slidesPerView: "auto",
+    loop: 'true',
+    spaceBetween: 16,
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/

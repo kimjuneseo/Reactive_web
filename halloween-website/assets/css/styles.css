@@ -110,8 +110,7 @@ button{
 
 section, footer{padding-top: 100px;}
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container{width: 90%; margin: 0 auto;  }
-
+.container{ max-width: 996px; margin: 0 auto;  }
 .flex{display: flex;}
 .grid{display: grid;}
 
@@ -167,8 +166,8 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 .home{padding: 0; padding-top: var(--header-height);}
 
 .pages{ width: 100%; position: relative; top: 30px;  z-index: 0; }
-
-.home_content .home_top_item{text-align: end;}
+.home_content{padding: 0px 1px 0px 1px; }
+.home_content .home_top_item{ text-align: end; }
 .home_content .home_top_item .txt_box{position: relative;}
 .home_content .home_top_item .txt_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 50px; right: 3px;}
 .home_content .home_top_item .txt_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius:var(--border-ra); position: absolute; top:90px; right: 0;}
@@ -179,7 +178,6 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 .home_content .home_bottom_item .home_btn>button{padding: 13px 20px 13px 20px;  }
 
 /* Swiper Class */
-.swiper-container { width: 100%; height: 100%; }
 .swiper-pagination-bullet { width: 6px; height: 6px; background: transparent; background: #fff;  opacity: 1; }
 .swiper-pagination-bullet-active { width: 20px; transition: width .5s; border-radius: 5px; background: #fff; border: 1px solid transparent; }
 
@@ -193,19 +191,20 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 .category_content .category_item .txt_box{text-align: center;}
 /*=============== ABOUT ===============*/
 .about{flex-direction: column;}
-.about .img_box{padding-top: 30px;}
-.about_content{ flex-direction: column; text-align: center;}
+.about .about_content *{padding-bottom: 1rem;}
+
 .about_content div{padding-top: 20px;}
 .about_content .btn_wrap{justify-content: center;}
 .about_content .btn_wrap .btn{padding: 15px;}
 
 /*=============== TRICK OR TREAT ===============*/
 .trick h2{text-align: center;}
-.trick_content{ margin: 0 auto; max-width: 500px; gap: 20px;  }
-.trick_item{ margin: 0 auto;  max-height: 300px; border-radius:var(--border-ra); background: var(--container-color); position: relative; overflow: hidden;}
-.trick_item .content{margin: 50px auto;  width: 60%; text-align: center; }
-.trick_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: -3rem;  transition: .2s;}
-.trick_item:hover .cart{  bottom: 0; right: 0;  transition: .2s;}
+.trick_content{ margin: 0 auto; gap: 1rem; justify-content: center;}
+.trick_item{ margin: 0 auto; width: 210px; height: 200px; border-radius:var(--border-ra); background: var(--container-color); position: relative; overflow: hidden;}
+.trick_item .img_box{width: 120px;}
+.trick_item .content{margin: 0 auto;  width: 60%; text-align: center; }
+.trick_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: -3rem;  transition: .3s;}
+.trick_item:hover .cart{  bottom: 0; right: 0;  transition: .3s;}
 .trick_item .cart_icon{font-size: var(--mb-1-5); padding: 8px;}
 
 
@@ -217,17 +216,18 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 .discount_content .discount_item .btn{padding: 10px;}
 
 /*=============== NEW ARRIVALS ===============*/
-.news{ text-align: center;}
+.news{ text-align: center;  }
 .new_arrivals_content{padding-top: 40px; }
-.new_arrivals_content .slide{ gap: 20px;}
-.new_arrivals_content .slide .slide_item{width: 242px; border-radius:var(--border-ra); background: var(--container-color); flex-direction: column; }
+.new_arrivals_content .slide .slide_item{ position: relative; width: 242px; flex-direction: column; border-radius:var(--border-ra); background: var(--container-color); overflow: hidden; }
+.new_arrivals_content .slide .slide_item .img_box{max-width: 120px;}
 .new_arrivals_content .slide .slide_item .btn_wrap{padding: 10px 0px 0px 10px;}
 .new_arrivals_content .slide .slide_item .btn_wrap .btn{padding: 10px; }
 .new_arrivals_content .slide .slide_item .txt_box{padding-top: 10px; justify-content: center; align-items: center; gap: 4px;}
 .new_arrivals_content .slide .slide_item .txt_box p:last-of-type{font-size: var(--small-font-size); color: rgb(253, 53, 3); position: relative;}
 .new_arrivals_content .slide .slide_item .txt_box p:last-of-type::before{content: ''; width: 75%; height: 1px; background: rgb(253, 53, 3); position: absolute; top: 50%; left: 11px;}
-
-
+.new_arrivals_content .slide .slide_item .cart_icon{font-size: var(--mb-1-5); padding: 8px;}
+.new_arrivals_content .slide .slide_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 3px; right: -3rem;  transition: .3s;}
+.new_arrivals_content .slide .slide_item:hover .cart{  bottom: 0; right: 0;  transition: .3s;}
 /*=============== NEWSLETTER ===============*/
 .newsletter{padding-top: 80px;  text-align: center;}
 .newsletter>p{font-size: var(--small-font-size);}
@@ -272,7 +272,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 /* For small devices */
 @media screen and (min-width: 320px){
   /* 모든 컨텐츠 항목은 한줄로 정렬된다. */
- .container{max-width: 996px;}
+  .container{width: 90%;}
 /* For medium devices */
 }
 @media screen and (min-width: 576px){
@@ -284,10 +284,16 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 
 @media screen and (min-width: 767px){
   /* 767px "이상"의 디바이스 대응 */
-  .home_content{padding-top: 40px;}
   .nav .nav_menu .img_box{display: none;}
   .nav .nav_menu .back{display: none;}
   .nav .icon_box{display: none;}
+
+  .home_content{padding-top: 40px;}
+  
+  .about{align-items: center;}
+
+  .trick_content{ grid-template-columns: repeat(3, 200px);  justify-content: center; gap: var(--mb-2);}
+  
 }
 
 /* For large devices */
@@ -310,7 +316,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
   .about .about_content{text-align: left;}
   .about .about_content .btn_wrap{justify-content: flex-start;}
   
-  .trick_content{max-width: 100%; grid-template-columns: repeat(3, 1fr); gap: 30px;}
+  .trick_content{max-width: 100%;  gap: 30px;}
 
   .discount_item{grid-template-columns: repeat(2, 1fr); align-items: center; }
   .discount_item .img_box{order: 1;}
