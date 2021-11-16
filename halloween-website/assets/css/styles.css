@@ -114,7 +114,7 @@ section, footer{padding-top: 100px;}
 .flex{display: flex;}
 .grid{display: grid;}
 
-.img_box{margin: 0 auto; max-width: 240px; transition: .5s; }
+.img_box{ max-width: 240px; margin: 0 auto; transition: .5s; }
 .img_box:hover{ transform: translateY(-10px); transition: .5s;}
 .btn{ border: none; background: rgb(253, 53, 3); color: #fff; border-radius: 9px;}
 
@@ -123,15 +123,14 @@ section, footer{padding-top: 100px;}
 
 
 /*=============== HEADER ===============*/
-header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-tooltip);  align-items: center;}
-.header_background{background: var(--container-color);}
+header{position: fixed; top: 0;  z-index: var(--z-tooltip); width: 100%; height:80px;   align-items: center;}
 .top_menu{justify-content:space-between; align-items: center;}
 .top_menu .left_item{ align-items: center;}
 .left_item .img_box{ width: 30px; padding: 5px; }
 .bx-grid-alt{font-size: var(--mb-1);}
 
 /*=============== NAV ===============*/
-.nav_menu .menu{  flex-direction: row; gap: 30px; align-items: center; }
+.nav_menu .menu{  flex-direction: row; align-items: center; gap: 30px;}
 .nav_menu .menu a{font-weight: var(--font-black);  color: #fff; }
 .nav_menu .menu button{padding: 10px 25px 15px 25px; border: 2px solid #fff; border-radius: var(--border-ra); color: #fff; background: none;}
 .nav_menu .menu .nav_active{position: relative;}
@@ -158,7 +157,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 
 /* Change background header */
 /* 스크롤을 내릴때 HEADER 영역에 배경색이 들어간다. (--container-color) */
-
+.header_background{background: var(--container-color);}
 
 /* Active link */
 
@@ -172,6 +171,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
 .home_content .home_top_item .txt_box{position: relative;}
 .home_content .home_top_item .txt_box::after{content: ''; width: 1px; height: 40px;  background: #fff; position: absolute; top: 50px; right: 3px;}
 .home_content .home_top_item .txt_box::before{content: ''; width: 7px; height: 7px;  background: #fff; border-radius:var(--border-ra); position: absolute; top:90px; right: 0;}
+.home_content .home_top_item .img_box{ max-width: initial; height: 250px;}
 .home_content .home_bottom_item h4{padding-bottom: 10px;}
 .home_content .home_bottom_item h2{ font-weight: var(--font-black); font-size: var(--biggest-font-size); line-height: 110%;}
 .home_content .home_bottom_item .txt_box{ padding-top: 20px; padding-bottom: 30px; font-size: var(--mb-0-75);  }
@@ -301,7 +301,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
   .about{align-items: center;}
 
   .trick_content{ grid-template-columns: repeat(3, 200px);  justify-content: center; gap: var(--mb-2);}
-  
+  .footer_content{grid-template-columns: repeat(4, 1fr); place-items: center;}
 }
 
 /* For large devices */
@@ -329,7 +329,7 @@ header{width: 100%; height:80px; position: fixed; top: 0;   z-index: var(--z-too
   .discount_item{grid-template-columns: repeat(2, 1fr); align-items: center; }
   .discount_item .img_box{order: 1;}
   .discount_item .txt_box{order: 2; }
-  .footer_content{grid-template-columns: repeat(4, 1fr); place-items: center;}
+  
   .footer_img_one{max-width: 80px; top: 30%; right: -2%;}
 .footer_img_two{max-width: 120px; top: 30%;  left: -2%;}
 }
