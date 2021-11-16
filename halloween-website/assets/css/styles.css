@@ -116,7 +116,7 @@ section, footer{padding-top: 100px;}
 
 .img_box{ max-width: 240px; margin: 0 auto; transition: .5s; }
 .img_box:hover{ transform: translateY(-10px); transition: .5s;}
-.btn{ border: none; background: rgb(253, 53, 3); color: #fff; border-radius: 9px;}
+.btn{ border: none; background: var(--first-color); color: #fff; border-radius: 9px;}
 
 
 /*=============== LAYOUT ===============*/
@@ -201,7 +201,7 @@ header{position: fixed; top: 0;  z-index: var(--z-tooltip); width: 100%; height:
 .trick_item{ margin: 0 auto; width: 210px; height: 200px; border-radius:var(--border-ra); background: var(--container-color); position: relative; overflow: hidden;}
 .trick_item .img_box{width: 120px;}
 .trick_item .content{margin: 0 auto;  width: 60%; text-align: center; }
-.trick_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 0; right: -3rem;  transition: .3s;}
+.trick_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: var(--first-color); position: absolute; bottom: 0; right: -3rem;  transition: .3s;}
 .trick_item:hover .cart{  bottom: 0; right: 0;  transition: .3s;}
 .trick_item:hover .img_box{transform: translateY(-10px);}
 .trick_item .cart_icon{font-size: var(--mb-1-5); padding: 8px;}
@@ -222,10 +222,10 @@ header{position: fixed; top: 0;  z-index: var(--z-tooltip); width: 100%; height:
 .new_arrivals_content .slide .slide_item .btn_wrap{padding: 10px 0px 0px 10px;}
 .new_arrivals_content .slide .slide_item .btn_wrap .btn{padding: 10px; }
 .new_arrivals_content .slide .slide_item .txt_box{padding-top: 10px; justify-content: center; align-items: center; gap: 4px;}
-.new_arrivals_content .slide .slide_item .txt_box p:last-of-type{font-size: var(--small-font-size); color: rgb(253, 53, 3); position: relative;}
-.new_arrivals_content .slide .slide_item .txt_box p:last-of-type::before{content: ''; width: 75%; height: 1px; background: rgb(253, 53, 3); position: absolute; top: 50%; left: 11px;}
+.new_arrivals_content .slide .slide_item .txt_box p:last-of-type{font-size: var(--small-font-size); color: var(--first-color); position: relative;}
+.new_arrivals_content .slide .slide_item .txt_box p:last-of-type::before{content: ''; width: 75%; height: 1px; background: var(--first-color); position: absolute; top: 50%; left: 11px;}
 .new_arrivals_content .slide .slide_item .cart_icon{font-size: var(--mb-1-5); padding: 8px;}
-.new_arrivals_content .slide .slide_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: rgb(253, 53, 3); position: absolute; bottom: 3px; right: -3rem;  transition: .3s;}
+.new_arrivals_content .slide .slide_item .cart{ border-radius:var(--border-ra) 3px 20px 3px; background: var(--first-color); position: absolute; bottom: 3px; right: -3rem;  transition: .3s;}
 .new_arrivals_content .slide .slide_item:hover .cart{  bottom: 0; right: 0;  transition: .3s;}
 .new_arrivals_content .slide .slide_item:hover .img_box{transform: translateY(-10px); transition: .5s;}
 /*=============== NEWSLETTER ===============*/
