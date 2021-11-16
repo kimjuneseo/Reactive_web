@@ -29,14 +29,7 @@ const swiperHome = new Swiper('.swiper-home', {
     pagination: {
         el: '.swiper-pagination',
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        clickable: true,
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+  
 });
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
@@ -65,37 +58,41 @@ const swiper = new Swiper('.swiper-arrivals', {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: 'true',
-    spaceBetween: 16,
+    spaceBetween : 19
+    
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SHOW SCROLL UP ===============*/
-
-
 ScrollReveal().reveal(`.swiper-home, .category_content, .trick_content, .new-swiper, .news, .newsletter  `, {
     origin: 'top',
     distance: '70px',
     duration: 3000,
     delay: 500,
-})
+});
 ScrollReveal().reveal(`.category_content, .trick__content, .footer_content`, {
     interval: 900,
     origin: 'top',
     distance: '70px',
     duration: 3000,
     delay: 500,
-})
+});
 ScrollReveal().reveal(`.about_content, .discount_content_img`, {
     origin: 'left',
     distance: '50px',
     duration: 2500,
     delay: 400,
-})
+});
 ScrollReveal().reveal(`.about_img, .discount_txt`, {
     origin: 'right',
     distance: '50px',
     duration: 2500,
     delay: 400,
-})
+});
+
+/*=============== SHOW SCROLL UP ===============*/
+const scrollUp = document.querySelector('.scroll');
+window.addEventListener('scroll', () => {
+    window.scrollY >= 500 ? scrollUp.classList.add('scroll_show') : scrollUp.classList.remove('scroll_show')
+});
+
+
