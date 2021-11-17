@@ -69,7 +69,7 @@ ScrollReveal().reveal(`.home__swiper, .category__contents, .trick__contents, .ne
     duration: 3000,
     delay: 500,
 });
-ScrollReveal().reveal(`.category__contents, .trick__contents, .footer_content`, {
+ScrollReveal().reveal(`.category__contents, .trick__contents, .footer__contents`, {
     interval: 900,
     origin: 'top',
     distance: '70px',
