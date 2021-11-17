@@ -23,7 +23,7 @@ hiddenMenu_btn.addEventListener('click', () => {
 
 
 /*=============== HOME SWIPER ===============*/
-const swiperHome = new Swiper('.swiper-home', {
+const swiperHome = new Swiper('.home__swiper', {
     direction: 'horizontal',
     loop: true,
     pagination: {
@@ -54,7 +54,7 @@ window.addEventListener('scroll', () => {
 });
 
 /*=============== NEW SWIPER ===============*/
-const swiper = new Swiper('.swiper-arrivals', {
+const swiper = new Swiper('.new__swiper', {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: 'true',
@@ -63,26 +63,26 @@ const swiper = new Swiper('.swiper-arrivals', {
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-ScrollReveal().reveal(`.swiper-home, .category_content, .trick_content, .new-swiper, .news, .newsletter  `, {
+ScrollReveal().reveal(`.home__swiper, .category__contents, .trick__contents, .new__swiper, .news, .newsletter  `, {
     origin: 'top',
     distance: '70px',
     duration: 3000,
     delay: 500,
 });
-ScrollReveal().reveal(`.category_content, .trick__content, .footer_content`, {
+ScrollReveal().reveal(`.category__contents, .trick__contents, .footer_content`, {
     interval: 900,
     origin: 'top',
     distance: '70px',
     duration: 3000,
     delay: 500,
 });
-ScrollReveal().reveal(`.about_content, .discount_content_img`, {
+ScrollReveal().reveal(`.about__content, .discount__content--img`, {
     origin: 'left',
     distance: '50px',
     duration: 2500,
     delay: 400,
 });
-ScrollReveal().reveal(`.about_img, .discount_txt`, {
+ScrollReveal().reveal(`.about__img, .discount__item--txt`, {
     origin: 'right',
     distance: '50px',
     duration: 2500,
