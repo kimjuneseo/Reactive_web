@@ -1,6 +1,6 @@
 /*=============== SHOW MENU ===============*/
 const header = document.querySelector('header');
-const nav = document.querySelector('.nav_menu');
+const nav = document.querySelector('.nav__menu');
 const showMenu_btn = document.querySelector('.show_menu');
 const hiddenMenu_btn = document.querySelector('.hidden_menu');
 const menu = document.querySelectorAll('.menu>div');
@@ -8,15 +8,15 @@ const menu = document.querySelectorAll('.menu>div');
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 showMenu_btn.addEventListener('click', () => {
-    nav.style.height = '400px';
-})
+    nav.classList.add('show_menus');
+});
 
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 hiddenMenu_btn.addEventListener('click', () => {
-    nav.style.height = 0;
-})
+    nav.classList.remove('show_menus');
+});
 
 
 /*=============== REMOVE MENU MOBILE ===============*/
@@ -46,9 +46,9 @@ window.addEventListener('scroll', () => {
             
         }
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector(`.nav_menu a[href='#${sectionId}']`).classList.add('nav_active')
+            document.querySelector(`.nav__menu a[href='#${sectionId}']`).classList.add('nav_active')
         } else {
-            document.querySelector(`.nav_menu a[href='#${sectionId}']`).classList.remove('nav_active')
+            document.querySelector(`.nav__menu a[href='#${sectionId}']`).classList.remove('nav_active')
         };
     })
 });
